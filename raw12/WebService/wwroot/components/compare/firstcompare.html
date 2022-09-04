@@ -1,0 +1,99 @@
+﻿<h2>Compare movies!</h2>
+<p>example on movie compare</p>
+<div>
+    <div>
+        Page size: <select data-bind="options: pageSizes, selectedOptions: selectedPageSize"></select>
+    </div>
+    <div data-bind="foreach: compares">
+        <div class="compare">
+            <div>
+                Link: <span data-bind="text: url"></span>
+            </div>
+            <div>
+                Title: <span data-bind="text: primaryTitle"></span>
+            </div>
+            <div>
+                Type: <span data-bind="text: titleType"></span>
+            </div>
+        </div>
+    </div>
+    <div data-bind="foreach: directors">
+        <div class="director">
+            <div>
+                Link: <span data-bind="text: url"></span>
+            </div>
+            <div>
+                Director (only the ID for now): <span data-bind="text: directorId"></span>
+            </div>
+        </div>
+    </div>
+    <!--<div data-bind="foreach: details">
+        <div class="moviedetails">
+            <div>-->
+    <!--Link: <span data-bind="text: url"></span>-->
+    <!--</div>
+            <div>
+                Year: <span data-bind="text: startyear"></span>
+            </div>
+            <div>
+                Time/length: <span data-bind="text: runTimeMinutes"></span>
+            </div>
+        </div>
+    </div>
+    <div data-bind="foreach: genres">
+        <div class="genre">
+            <div>-->
+    <!--Link: <span data-bind="text: url"></span>-->
+    <!--</div>
+            <div>
+                Genre: <span data-bind="text: startyear"></span>
+            </div>
+        </div>
+    </div>
+    <div data-bind="foreach: languages">
+        <div class="language">
+            <div>-->
+    <!--Link: <span data-bind="text: url"></span>-->
+    <!--</div>
+            <div>
+                Ordering: <span data-bind="text: ordering"></span>
+            </div>
+            <div>
+                Region: <span data-bind="text: region"></span>
+            </div>
+            <div>
+                Language: <span data-bind="text: language"></span>
+            </div>
+        </div>
+    </div>
+    <div data-bind="foreach: actors">
+        <div class="actor">
+            <div>-->
+    <!--Link: <span data-bind="text: url"></span>-->
+    <!--</div>
+            <div>
+                Actorname: <span data-bind="text: primaryName"></span>
+            </div>
+        </div>
+    </div>
+    <div data-bind="foreach: omdbs">
+        <div class="omdb">
+            <div>-->
+    <!--Link: <span data-bind="text: url"></span>-->
+    <!--</div>
+            <div>
+                Poster: <span data-bind="text: poster"></span>
+            </div>
+            <div>
+                Plot: <span data-bind="text: plot"></span>
+            </div>
+            <div>
+                Awards: <span data-bind="text: awards"></span>
+            </div>
+        </div>
+    </div>-->
+    <div class="navigation-buttons">
+        <button data-bind="click: showPrev, enable: enablePrev">Prev</button>
+        <button data-bind="click: showNext, enable: enableNext">Next</button>
+    </div>
+</div>
